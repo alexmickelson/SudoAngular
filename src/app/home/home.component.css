@@ -1,0 +1,69 @@
+
+div.home{
+    background-image: url(../../assets/img/writing4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin-top: 125px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+.caption{
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    font-family: museo;
+}
+
+.caption span.border {
+    background-color: #111;
+    position: absolute;
+    bottom: 50vh;
+    left: 44%;
+    text-align: center;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    opacity: 0.5;
+    font-family: museo;
+    border-radius: 5px;
+}
+
+.subtitle{
+    color: #F47B20;
+}
+
+@media screen and (max-width: 600px) {
+    div.home{
+        background-image: url(../../assets/img/writing-Phone4.jpg);
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+        position: absolute;
+        margin-top: 125px;
+    }
+      .caption{
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-shrink: inherit;
+    }
+
+    .caption span.border{
+        margin: 0 0 0 0 ;
+        left: 19%;
+    }
+
+    .caption span.border{
+        margin: 0 0 0 0 ;
+        left: 19%;
+    }
+}
