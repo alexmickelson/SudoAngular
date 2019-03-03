@@ -1,15 +1,15 @@
 
 <div id = "menu">
-    <img id = "logo" [src]='logo.src'  [height]="logo.height" [width]="logo.width">
-    <img class="banners" *ngFor='let banner of banners' [src]='banner' height="50px" width="50px">
+    <img id = "logo" [src]='logo.src'  [height]="logo.height" [width]="logo.width"/>
+    <img class="banners" *ngFor='let banner of banners' [src]='banner' height="50px" width="50px"/>
     
     <a href="https://sudosnow.slack.com" >
         <img class = "banners" src="assets/img/slack.png" height="50px" width="50px">
     </a>
 </div>
 <div class = "navigation" id = "myNav">
-    <a href = "#">Home</a>
-    <a href = "./view/schedule.html">Schedule</a>
+    <a [routerLink]="['home']">Home</a>
+    <a [routerLink]="['/schedule']" >Schedule</a>
     <a href = "https://sudosnow.slack.com/">Discussions</a>
     <a href = "#">About us</a>
     <a href= "javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
